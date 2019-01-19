@@ -1,0 +1,11 @@
+# Mac OS crap
+.DS_Store
+
+#Eclipse crap
+.project
+.classpath
+local.properties
+.settings/
+
+# Locally stored "Eclipse launch configurations"
+*.launch

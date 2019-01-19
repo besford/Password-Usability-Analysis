@@ -1,0 +1,69 @@
+
+
+Algorithm AnalyzeUserdata():
+    userData <- Read user data from dataByuser.csv and dataBySite.csv
+    scheme1Table <- BuildScheme1Table(userData)
+    scheme2Table <- BuildScheme2Table(userData)
+    userStats <- BuildUserStatsTable(userData)
+    schemeStats <- BuildSchemeStats(userData)
+
+    output userStats to file 
+    output schemeStats to file 
+
+    BuildHistogramUserLogins(scheme1Table)
+    BuildHistogramUserLogins(scheme2Table)
+
+    BuildHistogramUserLoginTimes(scheme1Table)
+    BuildHistogramUserLoginTimes(scheme2Table)
+
+    BuildBoxPlotUserLoginTimes(userData)
+    BuildBoxPlotPerUserLoginTimes(userData)
+
+
+Subroutine BuildScheme1Table(data):
+    return subset of data with only scheme1 entries
+
+
+Subroutine BuildScheme2Table(data):
+    return subset of data with only scheme2 entries
+
+
+Subroutine BuildUserStatsTable(data):
+    stats <- new table with entries computed from data:
+        mean, median, mode total login times 
+        mean, median, mode succesful login times 
+        mean, median, mode unsuccessful login times 
+        mean, median, mode total logins 
+        mean, median, mode succesful logins 
+        mean, median, mode unsuccessful logins 
+    return stats
+
+
+Subroutine BuildSchemeStats(data):
+    stats <- new table with entries compute from data:
+        mean, median, mode total login times 
+        mean, median, mode succesful login times 
+        mean, median, mode unsuccessful login times
+        mean, median, mode total logins 
+        mean, median, mode succesful logins 
+        mean, median, mode unsuccessful logins 
+        mean, median, mode passwords created
+        mean, median, mode number of practice entries
+    return stats
+
+Subroutine BuildHistogramUserLoginTimes(data):
+    Construct histogram For total login times and output to file
+    Construct histogram For succesful login times and output to file
+    Construct histogram For unsuccessful login times and output to file
+
+
+Subroutine BuildHistogramUserLogins(data):
+    Construct histogram For total logins and output to file
+    Construct histogram For succesful logins and output to file
+    Construct histogram For unsuccessful logins and output to file
+
+
+Subroutine BuildBoxPlotUserLoginTimes(data):
+    Construct boxplot For total login times and output to file
+    Construct boxplot For succesful login times and output to file
+    Construct boxplot For unsuccessful login times and output to file
