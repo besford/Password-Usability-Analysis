@@ -1,6 +1,5 @@
 # Password Usability Analysis
-This project represents a usability study of two password authentication schemas and an implementation for a proposed alternative system. All work featured
-herein was submitted in satisfaction of the requirements outlined in project 2 of the winter 2018 session of COMP3008.
+This project represents a usability study of two different password authentication schemas and an implementation for a proposed alternative. All work featured herein was submitted in satisfaction of the requirements outlined in project 2 of the winter 2018 session of COMP3008.
 
 ## Files
 ```
